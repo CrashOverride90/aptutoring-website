@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>AP Tutoring: The Best Tutoring service in the Houston Area</title>
+<meta name="description" content="If you need a tutor to help with your school and college work, contact us at AP Tutoring. We provide excellent tutoring services. We can help you in Math, Science, Computer, SAT and more. ">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="styles/mediaqueries.css" type="text/css" media="all">
+<script src="scripts/jquery-1.7.2.min.js"></script>
+<script src="scripts/jquery-mobilemenu.min.js"></script>
+<script src="scripts/helper.js"></script>
+
+<script>
+$(document).ready(function () {
+    $('.topnav').mobileMenu({
+        combine: false,
+        switchWidth: 600,
+        prependTo: 'nav#topnav'
+    });
+});
+</script>
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="styles/ie.css" type="text/css" media="all">
+<script src="scripts/css3-mediaqueries.min.js"></script>
+<script src="scripts/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="wrapper row1">
+  <header id="header">
+    <hgroup>
+      <h1><a href="index.html">AP Tutoring</a></h1>
+      <h2>Quality, Excellence, Virtue</h2>
+    </hgroup>
+    <!-- ################################################################################################ -->
+    <nav id="topnav">
+      <ul class="topnav clear">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tutors.html">Tutors</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="scheduler.html">Schedule a session</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="clear"></div>
+  </header>
+</div>
+<!-- content -->
+<div class="wrapper row2">
+  <div id="container">
+    <!-- content body -->
+    <div id="content"> 
+        <section id="comments" class="clear">
+<h2>Feedback form: </h2>
+        <form>
+          <p>
+            <input type="text" name="name" id="client_name" value="" size="22">
+            <label for="name"><small>Your Name (required)</small></label>
+          </p>
+          <p>
+            <input type="text" name="tutor_name" id="tutor_name" value="" size="22">
+            <label for="tutor_name"><small>Tutor Name (required)</small></label>
+          </p>
+          <p>
+            <input type="text" name="subject" id="subject" value="" size="22">
+            <label for="subject"><small>Topic (required)</small></label>
+          </p>
+          <p>
+            <textarea name="feedback" id="feedback" cols="25" rows="10"></textarea>
+            <label for="comment" class="hidden"><small>Comment (required)</small></label>
+          </p>
+          <p>
+            <button class="button black" onclick="feedbackForm();" type="button">Submit</button> 
+            &nbsp;
+            <input name="reset" type="reset" id="reset" value="Reset">
+          </p>
+        </form>    
+    </section>    
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+<!-- Copyright -->
+<div class="wrapper row3">
+  <footer id="copyright" class="clear">
+    <p class="fl_left">Copyright &copy; 2015 - All Rights Reserved - <a href="#">aptutoring.us</a></p>
+    <p class="fl_right">Website by <a href="http://www.ashikrk.com/">Ashik Khatri</a> & <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+  </footer>
+</div>
+</body>
+</html>

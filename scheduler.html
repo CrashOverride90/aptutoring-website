@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>AP Tutoring: The Best Tutoring service in the Houston Area</title>
+<meta name="description" content="If you need a tutor to help with your school and college work, contact us at AP Tutoring. We provide excellent tutoring services. We can help you in Math, Science, Computer, SAT and more. ">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="styles/mediaqueries.css" type="text/css" media="all">
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="scripts/jquery-mobilemenu.min.js"></script>
+<script src="scripts/helper.js"></script>
+<link rel="stylesheet" href="schedulingStyles.css" type="text/css" media="all">
+<script>
+$(document).ready(function () {
+    $('.topnav').mobileMenu({
+        combine: false,
+        switchWidth: 600,
+        prependTo: 'nav#topnav'
+    });
+});
+</script>
+<script>
+$(function() {
+	var today = new Date();
+	$( "#datepicker" ).datepicker({ minDate: today });
+});
+</script>
+<!--[if lt IE 9]>
+<link rel="stylesheet" href="styles/ie.css" type="text/css" media="all">
+<script src="scripts/css3-mediaqueries.min.js"></script>
+<script src="scripts/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="wrapper row1">
+  <header id="header">
+    <hgroup>
+      <h1><a href="index.html">AP Tutoring</a></h1>
+      <h2>Quality, Excellence, Virtue</h2>
+    </hgroup>
+    <!-- ################################################################################################ -->
+    <nav id="topnav">
+      <ul class="topnav clear">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tutors.html">Tutors</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li class="active"><a href="scheduler.html">Schedule a session</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="clear"></div>
+  </header>
+</div>
+<!-- content -->
+<!--
+<div>
+<center>
+<br>
+<h3>Oops. Online Scheduling is under maintenance.</h3>
+<p><br>
+	Please <i><a href="http://aptutoring.us/contact.html">Contact Us</a></i> to schedule a tutoring session. 
+</p>
+<p>Date: <input type="text" id="datepicker" /></p>
+</center>
+</div>
+-->
+
+<div class="wrapper row2">
+  <div id="container">
+    <!-- ################################################################################################ -->
+    <!-- content body -->
+    <div id="content"> 
+        <section id="comments" class="clear">
+<h2>Carefully fill out all the information to schedule private tutoring session(s)</h2>
+        <form id="schedule_form">
+          <p>
+			<label for="name">Name</label>
+			<input type="text" name="name" id="name" value="" size="22">
+          </p>
+          <p>
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" value="" size="21">
+          </p>
+          <p>
+          	<label for="number">Phone Number</label>
+            <input type="text" name="number" id="phone" value="" size="22">
+          </p>
+          <p>
+          	<label for="datepicker">Start Day</label>
+            <input type="text" name="datepicker" id="datepicker" size="22"/>
+          </p>
+          <p>
+          	<label for="subject">Subject</label>
+            <select id="subject" width="100" style="width: 180px;">
+			  <option value="SAT">SAT Prep</option>
+			  <option value="GRE">GRE Prep</option>
+			  <option value="TOEFL">TOEFL Prep</option>
+			  <option value="Algebra">Algebra</option>
+			  <option value="Geometry">Geometry</option>
+			  <option value="Precalculus">Precalculus/Trigonometry</option>
+			  <option value="Calculus">Calculus</option>
+			  <option value="chemistry">General Chemistry</option>
+			  <option value="OrgoChem">Organic Chemistry</option>
+			  <option value="physics">General Physics</option>
+			  <option value="UnivPhysics">University Physics</option>
+			  <option value="Biology">Biology</option>
+			  <option value="c++">C++ Programming</option>
+			  <option value="Java">JAVA Programming</option>
+			  <option value="iPhone">iPhone Programming</option>
+			  <option value="Android">Android Programming</option>
+			  <option value="Database">Database - SQL Programming</option>
+			  <option value="Web">Web Programming (HTML/PHP/JavaScript)</option>
+	  		</select>
+          </p>
+          <p>
+          	<label for="comment" class="hidden">Comment</label>
+            <textarea name="comment" id="comment" cols="25" rows="10"></textarea>
+          </p>
+          <p>
+          <button class="button orange" onclick="scheduleSession();" type="button">Submit</button> 
+            &nbsp;
+            <input name="reset" type="reset" id="reset" value="Reset">
+          </p>
+        </form>    
+    </section>    
+    </div>
+  </div>
+</div>
+
+
+<!-- Copyright -->
+<div class="wrapper row3">
+  <footer id="copyright" class="clear">
+    <p class="fl_left">Copyright &copy; 2015 - All Rights Reserved - <a href="#">aptutoring.us</a></p>
+    <p class="fl_right">Website by <a href="http://www.ashikrk.com/">Ashik Khatri</a> & <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+  </footer>
+</div>
+</body>
+</html>

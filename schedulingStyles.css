@@ -1,0 +1,21 @@
+#schedule_form form{
+/*
+    padding:10px;
+    margin:10px 0;
+    width:480px;
+    position: relative;
+*/
+}
+#schedule_form label{
+    width:150px;
+    display:block;
+    float:left;
+}
+#schedule_form input{
+/*
+    width:240px;
+    display:block;
+    float:left;
+*/
+}
+
