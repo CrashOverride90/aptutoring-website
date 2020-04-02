@@ -16,7 +16,7 @@ echo $feedback."\n";
 
 $con = mysql_connect("$host", "$username", "$password")or die("cannot connect");
 mysql_select_db("$db_name")or die("cannot select DB");
-$sql="insert into FEEDBACK values('$client_name', '$tutor_name', null, '$feedback')";
+$sql="insert into FEEDBACK values(0,'$client_name', '$tutor_name', '$subject', '$feedback')";
 mysql_query($sql, $con);
 mysql_close($con);
 
